@@ -533,7 +533,7 @@ enter_custom_dns() {
       dns_servers="$dns_server_1"
     fi
   else
-    echo "Using Google Public DNS (8.8.8.8, 8.8.4.4)."
+    echo "Using Cloudflare Public DNS (1.1.1.1  1.0.0.1)."
   fi
   echo
 }
