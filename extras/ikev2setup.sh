@@ -1427,9 +1427,9 @@ ikev2setup() {
       dns_server_2=""
       dns_servers="$VPN_DNS_SRV1"
     else
-      dns_server_1=8.8.8.8
-      dns_server_2=8.8.4.4
-      dns_servers="8.8.8.8 8.8.4.4"
+      dns_server_1=1.1.1.1
+      dns_server_2=1.0.0.1
+      dns_servers="1.1.1.1 1.0.0.1"
     fi
     check_mobike_support
     mobike_enable="$mobike_support"
