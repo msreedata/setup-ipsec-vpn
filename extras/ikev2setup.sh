@@ -502,7 +502,7 @@ enter_client_cert_validity() {
 
 enter_custom_dns() {
   echo
-  echo "By default, clients are set to use Google Public DNS when the VPN is active."
+  echo "By default, clients are set to use 1.1.1.1 Public DNS when the VPN is active."
   printf "Do you want to specify custom DNS servers for IKEv2? [y/N] "
   read -r response
   case $response in
@@ -511,9 +511,9 @@ enter_custom_dns() {
       ;;
     *)
       use_custom_dns=0
-      dns_server_1=8.8.8.8
-      dns_server_2=8.8.4.4
-      dns_servers="8.8.8.8 8.8.4.4"
+      dns_server_1=1.1.1.1
+      dns_server_2=1.0.0.1
+      dns_servers="1.1.1.1 1.0.0.1"
       ;;
   esac
   if [ "$use_custom_dns" = "1" ]; then
