@@ -6,7 +6,7 @@
 # DO NOT RUN THIS SCRIPT ON YOUR PC OR MAC!
 #
 # The latest version of this script is available at:
-# https://github.com/hwdsl2/setup-ipsec-vpn
+# https://github.com/msreedata/setup-ipsec-vpn
 #
 # Copyright (C) 2014-2021 Lin Song <linsongui@gmail.com>
 # Based on the work of Thomas Sarlandie (Copyright 2012)
@@ -214,7 +214,7 @@ install_fail2ban() {
 
 get_ikev2_script() {
   bigecho "Downloading IKEv2 script..."
-  ikev2_url="https://github.com/hwdsl2/setup-ipsec-vpn/raw/master/extras/ikev2setup.sh"
+  ikev2_url="https://github.com/msreedata/setup-ipsec-vpn/raw/master/extras/ikev2setup.sh"
   (
     set -x
     wget -t 3 -T 30 -q -O ikev2.sh "$ikev2_url"

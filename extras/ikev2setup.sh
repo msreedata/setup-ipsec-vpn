@@ -6,7 +6,7 @@
 # DO NOT RUN THIS SCRIPT ON YOUR PC OR MAC!
 #
 # The latest version of this script is available at:
-# https://github.com/hwdsl2/setup-ipsec-vpn
+# https://github.com/msreedata/setup-ipsec-vpn
 #
 # Copyright (C) 2020-2021 Lin Song <linsongui@gmail.com>
 #
@@ -116,7 +116,7 @@ check_libreswan() {
     || ! printf '%s' "$ipsec_ver" | grep -q "Libreswan"; then
 cat 1>&2 <<'EOF'
 Error: Your must first set up the IPsec VPN server before setting up IKEv2.
-       See: https://github.com/hwdsl2/setup-ipsec-vpn
+       See: https://github.com/msreedata/setup-ipsec-vpn
 EOF
     exit 1
   fi

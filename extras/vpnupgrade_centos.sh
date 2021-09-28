@@ -3,7 +3,7 @@
 # Script to update Libreswan on CentOS/RHEL, Rocky Linux and AlmaLinux
 #
 # The latest version of this script is available at:
-# https://github.com/hwdsl2/setup-ipsec-vpn
+# https://github.com/msreedata/setup-ipsec-vpn
 #
 # Copyright (C) 2016-2021 Lin Song <linsongui@gmail.com>
 #
@@ -76,7 +76,7 @@ EOF
   if ! printf '%s' "$ipsec_ver" | grep -q "Libreswan"; then
 cat 1>&2 <<'EOF'
 Error: This script requires Libreswan already installed.
-       See: https://github.com/hwdsl2/setup-ipsec-vpn
+       See: https://github.com/msreedata/setup-ipsec-vpn
 EOF
     exit 1
   fi

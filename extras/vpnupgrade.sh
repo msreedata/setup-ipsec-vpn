@@ -4,7 +4,7 @@
 # AlmaLinux, Amazon Linux 2 and Alpine Linux
 #
 # The latest version of this script is available at:
-# https://github.com/hwdsl2/setup-ipsec-vpn
+# https://github.com/msreedata/setup-ipsec-vpn
 #
 # Copyright (C) 2021 Lin Song <linsongui@gmail.com>
 #
@@ -128,7 +128,7 @@ EOF
   if ! printf '%s' "$ipsec_ver" | grep -q "Libreswan"; then
 cat 1>&2 <<'EOF'
 Error: This script requires Libreswan already installed.
-       See: https://github.com/hwdsl2/setup-ipsec-vpn
+       See: https://github.com/msreedata/setup-ipsec-vpn
 EOF
     exit 1
   fi
@@ -162,7 +162,7 @@ install_pkgs() {
 }
 
 get_setup_url() {
-  base_url="https://github.com/hwdsl2/setup-ipsec-vpn/raw/master/extras"
+  base_url="https://github.com/msreedata/setup-ipsec-vpn/raw/master/extras"
   sh_file="vpnupgrade_ubuntu.sh"
   if [ "$os_type" = "centos" ] || [ "$os_type" = "rhel" ] || [ "$os_type" = "rocky" ] || [ "$os_type" = "alma" ]; then
     sh_file="vpnupgrade_centos.sh"

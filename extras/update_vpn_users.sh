@@ -48,7 +48,7 @@ if ! grep -qs "hwdsl2 VPN script" /etc/sysctl.conf \
   || [ ! -f /etc/ppp/chap-secrets ] || [ ! -f /etc/ipsec.d/passwd ]; then
 cat 1>&2 <<'EOF'
 Error: Your must first set up the IPsec VPN server before updating VPN users.
-       See: https://github.com/hwdsl2/setup-ipsec-vpn
+       See: https://github.com/msreedata/setup-ipsec-vpn
 EOF
   exit 1
 fi
