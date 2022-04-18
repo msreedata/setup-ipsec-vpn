@@ -15,7 +15,7 @@
 # know how you have improved it!
 
 # Specify which Libreswan version to install. See: https://libreswan.org
-SWAN_VER=4.5
+SWAN_VER=4.6
 
 ### DO NOT edit below this line ###
 
@@ -100,20 +100,20 @@ check_libreswan() {
 cat 1>&2 <<EOF
 Error: Libreswan version '$SWAN_VER' is not supported.
        This script can install one of these versions:
-       3.32, 4.1-4.4 or 4.5
+       3.32, 4.1-4.4 or 4.6
 EOF
         exit 1
         ;;
     esac
   else
     case $SWAN_VER in
-      4.5)
+      4.6)
         true
         ;;
       *)
 cat 1>&2 <<EOF
 Error: Libreswan version '$SWAN_VER' is not supported.
-       This script can install Libreswan 4.5.
+       This script can install Libreswan 4.6.
 EOF
         exit 1
         ;;
