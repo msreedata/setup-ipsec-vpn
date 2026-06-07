@@ -52,7 +52,7 @@ check_libreswan() {
     || ! printf '%s' "$ipsec_ver" | grep -qi 'libreswan'; then
 cat 1>&2 <<'EOF'
 Error: Your must first set up the IPsec VPN server before selecting IKEv2-only mode.
-       See: https://github.com/hwdsl2/setup-ipsec-vpn
+       See: https://github.com/msreedata/setup-ipsec-vpn
 EOF
     exit 1
   fi

@@ -46,14 +46,14 @@ update_vpn_users() {
     || [ ! -f /etc/ppp/chap-secrets ] || [ ! -f /etc/ipsec.d/passwd ]; then
 cat 1>&2 <<'EOF'
 Error: Your must first set up the IPsec VPN server before updating VPN users.
-       See: https://github.com/hwdsl2/setup-ipsec-vpn
+       See: https://github.com/msreedata/setup-ipsec-vpn
 EOF
     exit 1
   fi
   command -v openssl >/dev/null 2>&1 || exiterr "'openssl' not found. Abort."
   if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
 cat 1>&2 <<'EOF'
-For usage information, visit https://github.com/hwdsl2/setup-ipsec-vpn,
+For usage information, visit https://github.com/msreedata/setup-ipsec-vpn,
 then click on Manage VPN Users.
 EOF
     exit 1
